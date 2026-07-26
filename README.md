@@ -29,7 +29,7 @@ Phiên bản này bao gồm toàn bộ mã nguồn Frontend, Backend và Cơ s�
 * IDE: Eclipse hoặc IntelliJ IDEA.
 **Các bước cài đặt:**
 
-1. Tải file nén `LuxuryGarage_FullSource.rar` (hoặc file `BTL_PTUDWEB_Nhom5.war`) và giải nén.
+1. Tải file nén `LuxuryGarage_FullSource.war` và giải nén.
 2. Mở IDE (Eclipse), chọn **File > Import > Web > WAR file** và trỏ đến thư mục mã nguồn.
 3. Cấu hình lại thông tin kết nối Database trong file `DBConnect.java` (username/password) nếu cần.
 4. Chạy dự án (Run on Server) bằng Apache Tomcat và truy cập qua đường dẫn Localhost trên trình duyệt.
