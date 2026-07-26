@@ -1,7 +1,7 @@
 # luxury-garage
 
 #  Luxury Garage - Website Thương Mại Điện Tử Bán xe ô tô
-## 🛠️ Công nghệ sử dụng
+##  Công nghệ sử dụng
 * **Frontend:** HTML, CSS, JavaScript.
 * **Backend & Database:** Java (JSP/Servlets), JDBC (cho phiên bản đầy đủ chức năng).
 * **Kiến trúc:** Mô hình MVC (Model - View - Controller).
