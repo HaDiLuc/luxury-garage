@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm Kiếm - Luxury Garage</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo3.png" alt="Luxury Garage Logo" class="logo-image">
+        </a>
+        
+        <nav class="main-nav">
+          <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="cars.html">Sản Phẩm</a></li>
+                <li><a href="news.html">Tin Tức</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+      
+      <div class="user-actions">
+          <a href="search-results.html" title="Tìm Kiếm"><i class="fas fa-search"></i></a>
+          <!-- Giao diện khi chưa đăng nhập -->
+          <a href="login.html" title="Đăng Nhập"><i class="fas fa-user"></i></a>
+          <a href="giohang.html" title="Giỏ Hàng"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </header>
+
+    <section class="search-page content-section">
+        <h1>TÌM KIẾM SIÊU XE CỦA BẠN</h1>
+        
+        <!-- Form tìm kiếm -->
+        <form class="search-form" method="GET" action="search-results.html"> 
+            <input type="text" name="keyword" 
+                   placeholder="Nhập tên xe, hãng xe, hoặc từ khóa..." 
+                   value="Ferrari" 
+                   required>
+            <button type="submit" class="btn-primary">
+                <i class="fas fa-search"></i> TÌM KIẾM
+            </button>
+        </form>
+
+        <div class="search-results">
+            
+            <h2 style="color: var(--primary-red); margin-top: 40px;">
+                KẾT QUẢ CHO: "Ferrari"
+            </h2>
+            
+            <p class="result-count">
+               Tìm thấy <strong>1</strong> kết quả phù hợp.
+            </p>
+            
+            <!-- Trường hợp không tìm thấy kết quả (Dùng tham khảo) -->
+            <!-- 
+            <p class="result-count" style="color: #ccc;">
+                Không tìm thấy kết quả nào phù hợp với từ khóa đã nhập. Vui lòng thử lại.
+            </p> 
+            -->
+            
+            <div class="product-list">
+                <div class="car-card">
+                    <img src="images/ferrari.jpg" alt="Ferrari SF90 Stradale">
+                    <div class="card-info">
+                        <h3>Ferrari SF90 Stradale</h3>
+                        <p class="tag">
+                            Ferrari | Năm: 2023 | 
+                            Trạng thái: <strong>Còn hàng</strong>
+                        </p>
+                        <p class="price">
+                            Giá: <span>25.000.000.000 ₫</span>
+                         </p>
+                         
+                        <a href="car-detail.html" class="btn-secondary">
+                            Xem Chi Tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxury Garage. Phát triển bởi Nhóm 5.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

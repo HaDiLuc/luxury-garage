@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danh Sách Siêu Xe - Luxury Garage</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+	<header class="main-header">
+		<a href="index.html" class="logo-link">
+            <img src="images/logo3.png" alt="Luxury Garage Logo" class="logo-image">
+        </a>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Trang Chủ</a></li>
+				<li><a href="gioithieu.html">Giới Thiệu</a></li>
+				<li><a href="cars.html" class="active">Sản Phẩm</a></li>
+				<li><a href="news.html">Tin Tức</a></li>
+				<li><a href="lienhe.html">Liên Hệ</a></li>
+			</ul>
+		</nav>
+		<div class="user-actions">
+			<a href="search-results.html" title="Tìm Kiếm"><i class="fas fa-search"></i></a>
+			<a href="login.html" title="Đăng Nhập"><i class="fas fa-user"></i></a>
+			<a href="giohang.html" title="Giỏ Hàng"><i class="fas fa-shopping-cart"></i></a>
+		</div>
+	</header>
+    
+	<section class="page-header fade-in">
+		<h1>DANH SÁCH SIÊU XE</h1>
+		<p>Khám phá bộ sưu tập đỉnh cao – đẳng cấp, tốc độ và phong cách.</p>
+	</section>
+    
+	<section class="content-section fade-in">
+		<div class="product-list" id="car-list-container">
+			
+            <!-- Xe mẫu 1 -->
+            <div class="car-card" data-brand="ferrari" data-price-value="25000000000">
+				<img src="images/ferrari.jpg" alt="Ferrari SF90">
+				<div class="card-info">
+					<h3>Ferrari SF90 Stradale</h3>
+					<p class="tag">Ferrari | 1000 HP</p>
+					<p class="price">Giá: <span>25.000.000.000 ₫</span></p>
+					<a href="car-detail.html" class="btn-secondary">Xem Chi Tiết</a>
+				</div>
+			</div>
+
+            <!-- Xe mẫu 2 -->
+            <div class="car-card" data-brand="lamborghini" data-price-value="30000000000">
+				<img src="images/lamborghini.jpg" alt="Lamborghini Aventador">
+				<div class="card-info">
+					<h3>Lamborghini Aventador SVJ</h3>
+					<p class="tag">Lamborghini | 770 HP</p>
+					<p class="price">Giá: <span>30.000.000.000 ₫</span></p>
+					<a href="car-detail.html" class="btn-secondary">Xem Chi Tiết</a>
+				</div>
+			</div>
+
+            <!-- Xe mẫu 3 -->
+            <div class="car-card" data-brand="porsche" data-price-value="0">
+				<img src="images/pordche.jpg" alt="Porsche 911">
+				<div class="card-info">
+					<h3>Porsche 911 Turbo S</h3>
+					<p class="tag">Porsche | 640 HP</p>
+					<p class="price">Giá: <span>Liên hệ</span></p>
+					<a href="car-detail.html" class="btn-secondary">Xem Chi Tiết</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+    
+	<footer>
+		<p>&copy; 2025 Luxury Garage. Phát triển bởi Nhóm 5.</p>
+	</footer>
+    
+	<script src="js/scripts.js"></script>
+</body>
+</html>

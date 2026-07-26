@@ -1,0 +1,155 @@
+Dưới đây là tệp `gioithieu.html` đã được chuyển đổi từ mã JSP của bạn. Các thẻ JSTL, cú pháp cấu hình server đã được gỡ bỏ và các đường dẫn `${pageContext.request.contextPath}/` đã được chuẩn hóa thành dạng đường dẫn tương đối tĩnh để mở trực tiếp trên trình duyệt.
+
+### `gioithieu.html`
+
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới Thiệu - Luxury Garage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  
+  <header class="main-header">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo3.png" alt="Luxury Garage Logo" class="logo-image">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="gioithieu.html" class="active">Giới Thiệu</a></li>
+        <li><a href="cars.html">Sản Phẩm</a></li>
+        <li><a href="news.html">Tin Tức</a></li> 
+        <li><a href="lienhe.html">Liên Hệ</a></li> 
+      </ul>
+    </nav>
+    <div class="user-actions">
+      <a href="search-results.html" title="Tìm Kiếm"><i class="fas fa-search"></i></a>
+      <!-- Giao diện khi chưa đăng nhập -->
+      <a href="login.html" title="Đăng Nhập"><i class="fas fa-user"></i></a>
+      <a href="giohang.html" title="Giỏ Hàng"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </header>
+
+  <section class="page-header fade-in">
+    <h1>VỀ LUXURY GARAGE</h1>
+    <p>Nơi đam mê tốc độ và đẳng cấp hội tụ.</p>
+  </section>
+
+  <section class="about-us content-section fade-in">
+    <div class="about-us-grid">
+        <div class="about-us-image">
+            <img src="images/1234.png" alt="Showroom Luxury Garage">
+        </div>
+        <div class="about-us-content">
+            <h2><i class="fas fa-flag-checkered"></i> CÂU CHUYỆN CỦA CHÚNG TÔI</h2>
+            <p>Được thành lập vào năm 2010 bởi niềm đam mê bất tận với những cỗ máy tốc độ, <strong>Luxury Garage</strong> khởi đầu là một showroom nhỏ với sứ mệnh mang những siêu phẩm xe hơi hàng đầu thế giới về Việt Nam. Chúng tôi không chỉ bán xe, chúng tôi chia sẻ một tình yêu, một phong cách sống.</p>
+            <p>Trải qua hơn 15 năm, Luxury Garage tự hào trở thành cầu nối cho hàng trăm tín đồ tốc độ, cung cấp những dịch vụ chuyên nghiệp, minh bạch và đẳng cấp nhất, khẳng định vị thế là đơn vị phân phối siêu xe uy tín hàng đầu.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="value-section content-section fade-in">
+    <h2 class="section-title">GIÁ TRỊ CỐT LÕI</h2>
+    <div class="value-grid">
+        <div class="value-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>CHẤT LƯỢNG</h3>
+            <p>Mỗi chiếc xe đều trải qua quy trình kiểm định 150 điểm nghiêm ngặt nhất trước khi đến tay bạn.</p>
+        </div>
+        <div class="value-item">
+            <i class="fas fa-rocket"></i>
+            <h3>ĐAM MÊ</h3>
+            <p>Chúng tôi là những nhà sưu tầm, những người đam mê. Chúng tôi hiểu rõ giá trị của từng cỗ máy.</p>
+        </div>
+        <div class="value-item">
+            <i class="fas fa-shield-alt"></i>
+            <h3>UY TÍN</h3>
+            <p>Minh bạch tuyệt đối về pháp lý, lịch sử xe và giá cả. Cam kết đồng hành trọn đời cùng khách hàng.</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="statistic-section content-section fade-in" style="background-color: #1a1a1a;">
+    <h2 class="section-title">NHỮNG CON SỐ ẤN TƯỢNG</h2>
+    <div class="statistic-row">
+       <div class="statistic-item">
+           <i class="fas fa-calendar-alt"></i>
+           <h3>15+</h3>
+           <p>Năm Kinh Nghiệm</p>
+         </div>
+   
+       <div class="statistic-item">
+           <i class="fas fa-car"></i>
+           <h3>100+</h3>
+           <p>Siêu Xe Đã Bán</p>
+         </div>
+         <div class="statistic-item">
+           <i class="fas fa-store"></i>
+           <h3>5</h3>
+           <p>Showroom Đẳng Cấp</p>
+         </div>
+     </div>
+  </section>
+  
+  <section class="team-section content-section fade-in">
+    <h2 class="section-title">GẶP GỠ ĐỘI NGŨ CHUYÊN GIA</h2>
+    <div class="team-grid">
+        
+        <div class="team-card">
+            <img src="images/luck.png" alt="CEO Hà Đình Lực">
+            <div class="team-info">
+                 <h3>Hà Đình Lực</h3>
+                <p>CEO & Nhà Sáng Lập</p>
+            </div>
+        </div>
+        
+        <div class="team-card">
+            <img src="images/vluong.png" alt="Trưởng phòng Kinh Doanh Vi Văn Lương">
+            <div class="team-info">
+                 <h3>Vi Văn Lương</h3>
+                <p>Trưởng phòng Kinh Doanh</p>
+            </div>
+        </div>
+        
+        <div class="team-card">
+            <img src="images/manh.png" alt="Trưởng phòng Kỹ Thuật Nguyễn Đức Mạnh">
+            <div class="team-info">
+                <h3>Nguyễn Đức Mạnh</h3>
+                <p>Trưởng phòng Kỹ Thuật</p>
+            </div>
+        </div>
+        
+        <div class="team-card">
+            <img src="images/team-4.png" alt="Trưởng phòng Nhân Sự Trần Hải Lương">
+             <div class="team-info">
+                <h3>Trần Hải Lương</h3>
+                <p>Trưởng phòng Nhân Sự</p>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  
+  <section class="cta-section fade-in">
+      <h2>SẴN SÀNG CHO HÀNH TRÌNH CỦA BẠN?</h2>
+      <p>Khám phá bộ sưu tập siêu xe độc quyền hoặc liên hệ với chuyên gia của chúng tôi ngay hôm nay.</p>
+      <div class="cta-buttons">
+          <a href="cars.html" class="btn-primary">KHÁM PHÁ BỘ SƯU TẬP</a>
+          <a href="lienhe.html" class="btn-secondary" style="width: auto;">LIÊN HỆ CHUYÊN GIA</a>
+      </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LuxuryCar. Phát triển bởi Nhóm 5.</p> 
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+
+```

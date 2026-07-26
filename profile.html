@@ -1,0 +1,81 @@
+Dưới đây là tệp `news-detail.html` đã được chuyển đổi hoàn toàn từ mã JSP của bạn sang HTML tĩnh (gỡ bỏ các lệnh JSP/JSTL, thay thế biến động bằng nội dung mẫu tĩnh và chuẩn hóa đường dẫn sang định dạng `.html`).
+
+### `news-detail.html`
+
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Siêu Xe Ferrari SF90 Stradale Lăn Bánh Tại Việt Nam - Luxury Garage</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo3.png" alt="Luxury Garage Logo" class="logo-image">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+        <li><a href="cars.html">Sản Phẩm</a></li>
+        <li><a href="news.html" class="active">Tin Tức</a></li>
+        <li><a href="lienhe.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+   
+    <div class="user-actions">
+      <a href="search-results.html" title="Tìm Kiếm"><i class="fas fa-search"></i></a>
+      
+      <!-- Giao diện khi chưa đăng nhập -->
+      <a href="login.html" title="Đăng Nhập"><i class="fas fa-user"></i></a>
+      
+      <a href="giohang.html" title="Giỏ Hàng"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </header>
+
+  <section class="car-detail-section content-section fade-in">
+    
+    <!-- Nội dung bài viết chi tiết mẫu -->
+    <h1 class="car-title"><i class="fas fa-fire"></i> Siêu Xe Ferrari SF90 Stradale Lăn Bánh Tại Việt Nam</h1>
+    <p style="text-align: center; color: #bbb; margin-top: -30px;">
+        26/03/2026 • Tác giả: <strong>Admin Luxury Garage</strong>
+    </p>
+
+    <div class="car-gallery">
+      <img src="images/ferrari.jpg" alt="Ferrari SF90 Stradale" class="main-image">
+    </div>
+
+    <div class="car-description" style="margin-top: 40px;">
+      <h2><i class="fas fa-info-circle"></i> NỘI DUNG BÀI VIẾT</h2>
+      <div id="description-content">
+        <p>Mới đây, một chiếc Ferrari SF90 Stradale thuộc phiên bản giới hạn vừa chính thức được bàn giao cho khách hàng tại showroom của chúng tôi. Với khối động cơ hybrid mạnh mẽ sản sinh công suất lên đến 1000 mã lực, mẫu xe này tiếp tục khẳng định vị thế đỉnh cao trong giới sưu tầm siêu xe tại Việt Nam.</p>
+        <p>Hãy cùng Luxury Garage tiếp tục đón chờ những siêu phẩm tiếp theo sẽ cập bến trong thời gian tới!</p>
+      </div>
+    </div>
+
+    <!-- Phần giao diện khi không tìm thấy bài viết (Dùng để tham khảo khi cần ẩn/hiện bằng JS) -->
+    <!--
+    <h1 class="car-title">404 - KHÔNG TÌM THẤY BÀI VIẾT</h1>
+    <p style="text-align: center;">Bài viết bạn đang tìm kiếm không tồn tại.</p>
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="news.html" class="btn-primary">Quay lại trang Tin Tức</a>
+    </div>
+    -->
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Luxury Garage. Phát triển bởi Nhóm 5.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+
+```

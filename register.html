@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Ký - Luxury Garage</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="main-header">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo3.png" alt="Luxury Garage Logo" class="logo-image">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+        <li><a href="cars.html">Sản Phẩm</a></li>
+        <li><a href="news.html">Tin Tức</a></li>
+        <li><a href="lienhe.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+    <div class="user-actions">
+      <a href="search-results.html" title="Tìm Kiếm"><i class="fas fa-search"></i></a>
+      <a href="login.html" title="Đăng Nhập"><i class="fas fa-user"></i></a> 
+      <a href="giohang.html" title="Giỏ Hàng"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <h1>TẠO TÀI KHOẢN</h1>
+    <p>Đăng ký để nhận những ưu đãi độc quyền.</p>
+  </section>
+
+  <section class="register-container content-section">
+    
+    <!-- Phần hiển thị lỗi (dùng tham khảo khi cần bật bằng code xử lý) -->
+    <!--
+    <div class="alert alert-danger" style="color:#b00020; margin-bottom:16px;">
+        Thông báo lỗi đăng ký...
+    </div>
+    -->
+
+    <form method="post" action="register"
+          class="auth-form" accept-charset="UTF-8" onsubmit="return checkPwd();">
+      <h2 style="text-align: center; color: var(--primary-red);">Đăng Ký</h2>
+
+      <div class="form-group">
+        <label for="hoTen">Họ và tên</label>
+        <div class="input-with-icon">
+           <i class="fas fa-user"></i>
+          <input type="text" id="hoTen" name="hoTen" placeholder="Nhập họ và tên" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <div class="input-with-icon">
+           <i class="fas fa-envelope"></i> 
+          <input type="email" id="email" name="email" placeholder="Nhập email" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Mật khẩu</label>
+        <div class="input-with-icon">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required minlength="6">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Xác nhận mật khẩu</label>
+         <div class="input-with-icon">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Nhập lại mật khẩu" required minlength="6">
+        </div>
+        <small id="pwdMsg" style="color:#b00020; display:none;">Mật khẩu xác nhận không khớp.</small> 
+      </div>
+
+      <input type="hidden" name="role" value="user"/>
+
+      <button type="submit" class="btn-primary">ĐĂNG KÝ</button>
+      <div class="form-links">
+        <p>Bạn đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Luxury Garage. Phát triển bởi Nhóm 5.</p>
+  </footer>
+
+  <!-- Script kiểm tra khớp mật khẩu -->
+  <script>
+    function checkPwd() {
+      var p = document.getElementById('password').value;
+      var c = document.getElementById('confirmPassword').value; 
+      var msg = document.getElementById('pwdMsg');
+      if (p !== c) {
+        msg.style.display = 'inline';
+        return false;
+      }
+      msg.style.display = 'none';
+      return true;
+    }
+  </script>
+</body>
+</html>
